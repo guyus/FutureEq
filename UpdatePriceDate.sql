@@ -1,0 +1,1 @@
+UPDATE sPrice SET	TrdDate='2021-03-24' WHERE TrdDate='2021-03-25'
