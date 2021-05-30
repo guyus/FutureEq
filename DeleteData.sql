@@ -1,0 +1,1 @@
+DELETE from sShortSell WHERE TrdDate = '2021-04-01'
