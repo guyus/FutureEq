@@ -10,7 +10,7 @@ from sqlalchemy import create_engine
 engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
 
 sField = "net"
-sStartDate = "2020-08-01"
+sStartDate = "2021-08-01"
 multi = "PTT"
 
 def setArg(para,multi,sField,sStartDate):
