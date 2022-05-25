@@ -4,7 +4,8 @@ import pandas as pd
 # cnx = sqlite3.connect('EquityTrend.db')
 from sqlalchemy import create_engine
 engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
-df=pd.read_html('https://classic.set.or.th/set/shortsales.do?language=en&country=US')
+df=pd.read_html('https://www.set.or.th/set/shortsales.do?format=html&from=14%2F12%2F2021&to=14%2F12%2F2021&submit=Search&language=en&country=US')
+#df=pd.read_html('https://www.set.or.th/set/shortsales.do?language=en&country=US')
 
 df[0].rename(columns = {'Securities':'series','Volume (Shares)':'volume','Turnover (Baht)':'value',
 '%Short Sale Volume Comparing with Auto Matching':'per'},inplace = True)
@@ -12,7 +13,7 @@ df[0]['trddate'] = pd.to_datetime('today').date()
 
 
 df=df[0]
-df['trddate'] = df['trddate'].apply(pd.DateOffset(-1)).apply(lambda x : x.date())
+df['trddate'] = df['trddate'].apply(pd.DateOffset(-2)).apply(lambda x : x.date())
 df['per']=df['per'].apply(lambda x:x.replace(' %',''))
 sql = "select * from sshortsell where trddate = '"+ df.iloc[0,4].strftime('%Y-%m-%d') + "'"
 print(sql)

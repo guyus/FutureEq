@@ -4,7 +4,7 @@ import pandas as pd
 import sqlite3
 # Create your connection.
 cnx = sqlite3.connect('EquityTrend.db')
-df=pd.read_html('https://www.set.or.th/set/shortsales.do?language=en&country=US')
+df=pd.read_html('https://classic.set.or.th/set/shortsales.do?language=en&country=US')
 
 df[0].rename(columns = {'Securities':'Series','Volume (Shares)':'Volume','Turnover (Baht)':'Value',
 '%Short Sale Volume Comparing with Auto Matching':'Perc'},inplace = True)

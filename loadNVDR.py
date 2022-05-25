@@ -2,7 +2,7 @@ import pandas as pd
 import sqlite3
 # Create your connection.
 cnx = sqlite3.connect('EquityTrend.db')
-df=pd.read_html('https://www.set.or.th/set/nvdrbystock.do?type=value&sort=total&language=en&country=US')
+df=pd.read_html('https://classic.set.or.th/set/nvdrbystock.do?type=value&sort=total&language=en&country=US')
 df=df[0]
 df.columns = df.columns.droplevel()
 df.rename(columns = {'%*':'Percent'}, inplace = True)

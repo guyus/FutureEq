@@ -1,0 +1,446 @@
+
+
+
+
+
+
+
+
+
+    
+        
+        
+        
+    
+    
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="th"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="th"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="th"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,IE=8">
+    <meta name="description" content="TFEX: Thailand Futures Exchanges">
+    <meta name="keywords" content="TFEX, Futures,Options, Derivatives">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>TFEX : Thailand Futures Exchange - Daily Market Quotation</title>
+    <!-- HTTP 1.1 -->
+<meta http-equiv="Cache-Control" content="no-store" />
+<!-- HTTP 1.0 -->
+<meta http-equiv="Pragma" content="no-cache" />
+<!-- Prevents caching at the Proxy Server -->
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The Thailand Futures Exchange Plc (TFEX), The Stock Exchange of Thailand Group" />
+<meta name="keywords" content="TFEX, Thailand, futures exchange, Thai futures market, derivatives products, futures, options, index futures, commodity, broker, selling agent, SET50 index futures, SET50 index Options, Stock futures, gold futures, silver futures, interest rate futures, oil futures" />
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/vnd.microsoft.icon"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-submenu.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/main-responsive.css">
+    <link rel="stylesheet" href="/css/tablet.css">
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" href="/css/ie.css"> <![endif]-->
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/js/vendor/html5shiv.min.js"></script>
+    <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <![endif]-->
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQGSPZ7');</script>
+<!-- End Google Tag Manager -->
+<script src="/js/pdpa-script.js"></script>
+    
+  
+  <script language="javascript">
+    function loadUnderlying(strURL){
+        ga('send', 'pageview', '/popup_reference_data');
+        $('#underlyingDetail').load(strURL);
+    }
+  </script>
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQGSPZ7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- GDPR Cookie : Start -->
+<div id="cookiesPolicy" class="eupopup eupopup-container">&nbsp;</div>
+<!-- GDPR Cookie : End -->
+<!--[if lt IE 7]>
+<p class="browsehappy">
+    You are using an <strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+</p>
+<![endif]-->
+<!-- Start header -->
+<div class="webonly">
+    
+
+
+
+
+
+
+
+
+<!-- Start set Link for Change language -->
+
+
+
+
+
+    
+        
+    
+    
+
+<div id="mobile-language-sel" class="container mobile-language-selector collapse">
+    <p class="pull-left"><strong>Language :</strong></p>
+    <ul class="pull-right">
+        <li><a href="/tfex/dailyMarketReport.html?locale=th_TH">ไทย</a></li>
+        <li>EN</li>
+    </ul>
+</div>
+<div class="header" id="header">
+    
+    <div class="container logo_banner">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3 logo_header">
+                
+                
+                    
+                
+                
+                
+                <a href="/tfex/index.html" class="logo-tfex-en"></a>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 braner-and-search padding-0">
+                <div class="visible-lg braner-header">
+                    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/15511860/TFEX_top_banner_728x90', [728, 90], 'div-gpt-ad-1478664368700-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- /15511860/TFEX_top_banner_728x90 -->
+<div class="personalized-top-banner-optimize" style="display: none;">
+    <a href="#" target="_blank"><img src="#" style="width:100%;"></a>
+</div>
+<div class="personalized-top-banner" id="div-gpt-ad-1478664368700-0" style="display:none;height:90px; width:728px;">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1478664368700-0'); });
+</script>
+</div>
+
+                </div>
+                <div id="nav-form-search" class="search_header navbar-collapse collapse">
+                    <div class="top-circle-social hidden-xs">
+                        <h4><strong>Follow us</strong></h4>
+<a href="https://www.facebook.com/TFEXStation" target="_blank">
+   <span class="circle-icon-social">
+        <img class="icon-social-line" src="/commons/img/icon_facebook.png" style="height: 30px; width: 30px;">
+    </span>
+</a>
+<a href="https://line.me/R/ti/p/%40setthailand" target="_blank">
+    <span class="circle-icon-social">
+        <img class="icon-social-line" src="/commons/img/icon_line.png" style="height: 30px; width: 30px;">
+    </span>
+</a>
+<a href="https://www.youtube.com/user/setgroupofficial" target="_blank">
+    <span class="circle-icon-social">
+        <img class="icon-social-line" src="/commons/img/icon_youtube.png" style="height: 30px; width: 30px;">
+    </span>
+</a>
+<a href="https://www.instagram.com/set_thailand/" target="_blank">
+    <span class="circle-icon-social">
+        <img class="icon-social-line" src="/commons/img/icon_instagram.png" style="height: 30px; width: 30px;">
+    </span>
+</a>
+<a href="https://twitter.com/SET_Thailand" target="_blank">
+    <span class="circle-icon-social">
+        <img class="icon-social-line" src="/commons/img/icon_twitter.png" style="height: 30px; width: 30px;">
+    </span>
+</a>
+                    </div>
+                    <form class="form-search" role="form" action="/commons/searchresult.html" id="cse-search-box" target="_blank">
+    <input type="hidden" name="cref" value="">
+    <input type="hidden" name="ie" value="utf-8">
+    <input type="hidden" name="hl" value="">
+    <input type="hidden" name="cx" value="016505355574125279382:kxubjmfz_gy">
+    <input type="hidden" name="cof" value="FORID:11">
+    <input type="hidden" name="sa" value="ค้นหา">
+    <div class="input-group">
+        <input type="text" class="input-text-search" placeholder="Google Search" name="q">
+        <span class="input-text-search-button">
+            <button class="" type="button" onclick="javascript:submit();"><i class="fa fa-search"></i></button>
+        </span>
+    </div>
+</form>
+
+                </div>
+                <div class="nav-get-f visible-xs clearfix">
+                    <div class="pull-left input-group">
+                        <form action="/tfex/searchSeries.html?locale=en_US">
+                            <input type="text" name="symbol" placeholder="Get Quote" id="input-get-quote-mobile">
+                            <button class="input-quote-mobile-button" type="submit"><i class="fa fa-caret-right"></i></button>
+                        </form>
+                    </div>
+                    <div class="pull-right text-center">
+                        <a class="search-symbol" href="/tfex/searchSeries.html?locale=en_US">Series</a>
+                        <ul class="navbar-lang">
+                            <li><a href="/tfex/dailyMarketReport.html?locale=th_TH">ไทย</a></li>
+                            <li><a href="/tfex/dailyMarketReport.html?locale=en_US">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Nav header -->
+    <nav id="top-nav" class="navbar border-bottom-yellow-4" role="navigation">
+        <div class="container">
+            <div class="row background-nav-tablet ">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed navbar-toggle-show" data-toggle="collapse"
+                            data-target="#nav-header">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <button type="button" class="btn btn-link btn-mobile-lang btn-toggle-search visible-xs">
+                        
+                            
+                            <a href="/tfex/dailyMarketReport.html?locale=th_TH">ไทย</a>
+                        
+                    </button>
+                    <button type="button" class="btn btn-link btn-mobile-search btn-toggle-search visible-xs"
+                            data-toggle="collapse" data-target="#nav-form-search">
+                        <i class="fa fa-search"></i> <span>Search</span>
+                    </button>
+                    <a class="navbar-brand" href="/tfex/index.html?locale=en_US">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </div>
+                <div class="nav-get-f visible-sm visible-md clearfix">
+                    <div class="pull-left input-group">
+                        <form action="/tfex/searchSeries.html?locale=en_US">
+                            <input type="text" name="symbol" placeholder="Get Quote" id="input-get-quote-tablet">
+                            <button class="input-quote-mobile-button" type="submit"><i class="fa fa-caret-right"></i></button>
+                        </form>
+                    </div>
+                    <div class="pull-right text-center">
+                        <a class="search-symbol" href="/tfex/searchSeries.html?locale=en_US">Series</a>
+                        <ul class="navbar-lang">
+                            <li><a href="/tfex/dailyMarketReport.html?locale=th_TH">ไทย</a></li>
+                            <li><a href="/tfex/dailyMarketReport.html?locale=en_US">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse padding-right-0" id="nav-header">
+                    <ul class="nav navbar-nav">
+    <li class="dropdown dropdown-nav">
+        <a href="/en/about/glance.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+            <span>About TFEX</span>
+        </a>
+        <ul class="dropdown-menu dropdown-nav-ul">
+            <li><a href="/en/about/glance.html">At a Glance</a></li>
+            <li><a href="/en/about/board.html">Board of Directors</a></li>
+            <li><a href="/en/about/orgstructure.html">Organization Structure</a></li>
+            <li><a href="/en/about/annualreport.html">Annual Report</a></li>
+            <li><a href="/en/about/calendar.html">Trading Calendar</a></li>
+            <li><a href="/tfex/releasedNews.html?locale=en_US">TFEX Releases</a></li>
+            <li><a href="/en/about/holiday.html">TFEX Holiday</a></li>
+			<li><a href="/en/about/tfexcg.html">Good Corporate Governance</a></li>
+        </ul>
+    </li>
+    <li class="dropdown dropdown-nav">
+        <a href="/en/rules/procedures.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+            <span>Rules</span>
+        </a>
+        <ul class="dropdown-menu dropdown-nav-ul">
+            <li><a href="https://classic.set.or.th/rulebook/#/regulation/tree/32?" target="_blank">Regulations & Procedures</a></li>
+            <li><a href="https://classic.set.or.th/rulebook/#/regulation/tree/32?" target="_blank">Guideline</a></li>
+            <li><a href="https://classic.set.or.th/rulebook/#/form/tree/76?" target="_blank">Forms</a></li>
+        </ul>
+    </li>
+    <li class="dropdown dropdown-nav">
+        <a href="/en/products/products.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+            <span>Products/Services</span>
+        </a>
+        <ul class="dropdown-menu dropdown-nav-ul">
+            <li><a href="/en/products/products.html">Products</a></li>
+			<li class="dropdown-submenu">
+                <a href="/en/products/s50if-mktdata.html" data-toggle="dropdown" aria-expanded="false">Equity</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="/en/products/s50if-mktdata.html">SET50 Index Futures</a></li>
+                    <li><a href="/en/products/s50io-mktdata.html">SET50 Options</a></li>
+                    <li><a href="/en/products/sector-mktdata.html">Sector Index Futures</a></li>
+                    <li><a href="/en/products/stock-mktdata.html">Single Stock Futures</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a href="/en/products/gold-mktdata.html" data-toggle="dropdown" aria-expanded="false">Precious Metal</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="/en/products/gold-mktdata.html">Gold Futures</a></li>
+					<li><a href="/en/products/goldonline-mktdata.html">Gold Online Futures</a></li>
+                    <li><a href="/en/products/svf-mktdata.html">Silver Online Futures</a></li>
+                </ul>
+            </li>
+			<li class="dropdown-submenu">
+                <a href="/en/products/goldd-spec.html" data-toggle="dropdown" aria-expanded="false">Deferred Precious Metal</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="/en/products/goldd-mktdata.html">Gold-D</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a href="/en/products/bb3-mktdata.html" data-toggle="dropdown" aria-expanded="false">Interest Rate</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="/en/products/bb3-mktdata.html">3M BIBOR Futures</a></li>
+                    <li><a href="/en/products/tgb5-mktdata.html">5Y Gov Bond Futures</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a href="/en/products/rss3-mktdata.html" data-toggle="dropdown" aria-expanded="false">Agriculture</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="/en/products/rss3-mktdata.html">RSS3 Futures</a></li>
+                    <li><a href="/en/products/rss3d-mktdata.html">RSS3D Futures</a></li>
+                    <li><a href="/en/products/jrf-spec.html">Japanese Rubber Futures</a></li> 
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a href="/en/products/usd-mktdata.html" data-toggle="dropdown" aria-expanded="false">Currency</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="/en/products/usd-mktdata.html">USD Futures</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a href="https://classic.set.or.th/en/products/info/details_p1.html" data-toggle="dropdown" aria-expanded="false">Information Services</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="https://classic.set.or.th/en/products/info/details_p1.html" target="_blank">Service Detail</a></li>
+					<li><a href="https://classic.set.or.th/app/online-data" target="_blank">SMART Marketplace</a></li>
+					<li><a href="https://classic.set.or.th/site/products/info/subscription/form?lang=en" target="_blank">Subscription</a></li>
+                    <li><a href="https://classic.set.or.th/en/products/info/data_vendors_p1.html" target="_blank">Data Vendors</a></li>
+                    <li><a href="https://classic.set.or.th/en/products/info/policy_p1.html" target="_blank">SET Information Services Guideline</a></li>
+                </ul>
+            </li>
+			<li class="dropdown-submenu">
+                <a href="https://classic.set.or.th/en/products/institution/institution_p1.html" data-toggle="dropdown" aria-expanded="false">Institutional Services</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="https://classic.set.or.th/en/products/institution/institution_p1.html" target="_blank">Trading Channel for Institutional Investors </a></li>
+                    <li><a href="https://classic.set.or.th/en/products/institution/dma.html" target="_blank">Direct Market Access (DMA)</a></li>
+                    <li><a href="https://classic.set.or.th/en/products/institution/algorithmic_trading.html" target="_blank">Algorithmic Trading</a></li>
+                </ul>
+            </li>
+            <li><a href="https://classic.set.or.th/en/products/colocation/colocation_p1.html" target="_blank">Co-location Services</a></li>
+            <li><a href="https://classic.set.or.th/en/products/isv/isv_p1.html" target="_blank">ISV</a></li>
+        </ul>
+    </li>
+    <li class="dropdown dropdown-nav">
+        <a href="/tfex/dailyMarketReport.html?locale=en_US" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+            <span>Market Data</span>
+        </a>
+        <ul class="dropdown-menu dropdown-nav-ul">
+            <li><a href="/tfex/dailyMarketReport.html?locale=en_US">Daily Market Quotation</a></li>
+            <li><a href="/tfex/searchSeries.html?locale=en_US">Trading Quotation by Series</a></li>
+            <li><a href="/tfex/blockTradeReport.html?locale=en_US">Block Trade</a></li>
+			<li><a href="/en/products/s50io-mktdata.html">Options Greek Summary</a></li>
+            <li><a href="/tfex/investorTypeTrading.html?locale=en_US">Trading by Investor Types</a></li>
+            <li class="dropdown-submenu">
+                <a href="/tfex/dailyMarketSummary.html?locale=en_US" data-toggle="dropdown" aria-expanded="false">Historical Data</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="/tfex/dailyMarketSummary.html?locale=en_US">Market Statistics</a></li>
+                    <li><a href="/tfex/historicalMarketReport.html?locale=en_US">Trading Statistics by Series</a></li>
+					<li><a href="/en/marketdata/sf_blocktrade_report.html">Stock Futures Block Trade Report</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a href="/tfex/brokerRank.html?locale=en_US" data-toggle="dropdown" aria-expanded="false">Broker Rank</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="/tfex/brokerRank.html?locale=en_US">Broker Rank</a>
+                    <li><a href="/tfex/brokerRankByProduct.html?locale=en_US">Broker Rank by Products</a>
+                </ul>
+            </li>
+            <li><a href="/tfex/downloadSeriesProfile.html?locale=en_US">Series Profile Download</a></li>
+            <li><a href="/tfex/tradingNotice.html?locale=en_US">Trading Notice</a></li>
+            <li><a href="/en/marketdata/monthlyreport.html">Monthly Market Report</a></li>
+            <li><a href="/tfex/referenceData.html?locale=en_US&marketList=PMF">Reference Data</a></li>
+        </ul>
+    </li>
+    <li class="dropdown dropdown-nav">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+            <span>Education</span>
+        </a>
+        <ul class="dropdown-menu dropdown-nav-ul">
+            <li><a href="http://www.settrade.com/C17_ResearchList.jsp?keyword=FUTURES&select_period=180" target="_blank">Research</a></li>
+			<li><a href="/en/education/knowledge.html">Investment Knowledge</a></li>
+			<li class="dropdown-submenu">
+                <a href="/tfex/optionsCalculator.html?locale=en_US" data-toggle="dropdown" aria-expanded="false">Pricing Program</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="/tfex/optionsCalculator.html?locale=en_US">Options Calculator</a></li>
+                </ul>
+            </li>
+            <li><a href="/en/education/glossary.html">Glossary</a></li>
+			<li class="dropdown-submenu">
+                <a href="/en/education/papers.html" data-toggle="dropdown" aria-expanded="false">Document Library</a>
+                <ul class="dropdown-menu popover-set navtop" role="menu">
+                    <li><a href="/en/education/papers.html">Presentation Archive</a></li>
+                    <li><a href="/en/education/knowledge_OIC.html">Option Knowledge</a></li>
+                    <li><a href="/en/education/knowledge_InvGuide.html">Guide for Foreign Investors</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="last dropdown dropdown-nav">
+        <a href="/en/member/structure.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+            <span>Member</span>
+        </a>
+        <ul class="dropdown-menu dropdown-nav-ul">
+            <li class="dropdown-submenu"><a href="/en/member/structure.html" data-toggle="dropdown" aria-expanded="false">Member Structure</a></li>
+            <li class="dropdown-submenu"><a href="/en/member/list.html" data-toggle="dropdown" aria-expanded="false">Member List</a></li>
+            <li class="dropdown-submenu"><a href="/en/member/list_SA.html" data-toggle="dropdown" aria-expanded="false">Selling Agent List</a></li>
+            <li class="dropdown-submenu"><a href="/en/member/list_MM.html" data-toggle="dropdown" aria-expanded="false">Market Maker List</a></li>
+			<li class="dropdown-submenu"><a href="/en/member/delivery_equalizer.html" data-toggle="dropdown" aria-expanded="false">Delivery Equalizer</a></li>
+            <li class="dropdown-submenu"><a href="https://www.setportal.set.or.th/" data-toggle="dropdown" aria-expanded="false" target="_blank">SET Community Portal</a></li>
+            <li class="dropdown-submenu"><a href="/en/member/dipf.html" data-toggle="dropdown" aria-expanded="false">Derivatives Investor Protection Fund </a></li>
+        </ul>
+    </li>
+</ul>
+                    <form class="navbar-form navbar-right nav-set-form" role="search" action="/tfex/searchSeries.html?locale=en_US">
+                        <div class="nav-quote hidden-xs hidden-sm">
+                            <input type="text" id="input-get-quote" name="symbol" placeholder="Get Quote">
+                            <button class="btn-search" id="searchBtn" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            <a class="btn-series" href="/tfex/searchSeries.html?locale=en_US">Series</a>
+                        </div>
+                        <ul class="nav navbar-nav

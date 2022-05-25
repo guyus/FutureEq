@@ -5,3 +5,5 @@ install pip
 	python -m pip install --upgrade pip
 pip install pandas
 pip install lxml
+pip install sqlalchemy
+pip install html5lib 

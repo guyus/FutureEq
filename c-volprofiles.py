@@ -26,6 +26,8 @@ try:
         sql = "SELECT series FROM public.\"TrendOI_Avg_Buy\";"
     elif sType == "s":
         sql = "SELECT series FROM public.\"TrendOI_Avg_Sell\";"
+    elif sType == "a":
+        sql = "SELECT series FROM public.\"TrendOI_AvgAll\";"
     elif sType == "c":
         sql = "SELECT symbol FROM public.checksymbol;"
     elif sType == "t":
@@ -35,20 +37,30 @@ try:
     elif sType == "d":
         sql = "SELECT series FROM public.\"TrendOI_AvgAll_Dn\";"
     elif sType == "pre":
-        sql = "SELECT x.* FROM public.trendp_oi x WHERE v1 >volavg5 and fa5>fa10 ORDER BY x.pricer DESC,x.pval DESC;"
+        sql = "SELECT x.* FROM public.trendp_oi_avg x ORDER BY x.pricer DESC,x.pval DESC;"
     elif sType == "v":
-        sql = "SELECT x.* FROM public.trendoi x WHERE close > closeavg5 and v1 >volavg5 and fa5 >fa10 and fnet1 >fa10 and close >= pmax and v1>1 and o1 >oiavg5  ORDER BY x.pricer DESC,x.pval DESC;"
-    
-    print(sql)
-    cursor.execute(sql)
-        # Fetch result
-    record = cursor.fetchall()
+        sql = "SELECT x.* FROM public.trendoi x WHERE close > closeavg5 and v1 >volavg5 and fa5 >fa10 and fnet1 >fa10 and v1>1 and o1 >oiavg5  ORDER BY x.pricer DESC,x.pval DESC;"
+    elif sType == "p":
+        sql = "SELECT x.* FROM public.trendp_oi x WHERE pricer>0;"
+    elif sType == "i":
+        sql = "SELECT x.* FROM public.trendp_oi x WHERE pricer>0;"
+    elif sType == "cb":
+        sql = "SELECT series FROM public.\"TrendOI-Cont-Buy\";"
+
+
+    if sType == "i":
+        record = [['TCAP'],['SCGP'],['EA'],['TOA'],['CAPLL'],['RCL']]
+    else:
+        print(sql)
+        cursor.execute(sql)
+            # Fetch result
+        record = cursor.fetchall()       
 
     for row in record:
         #print("c-volprofile.py -d:2021-08-02 -s:" + row[0])
         os.system("c-volprofile.py -d:2021-08-02 -s:" + row[0])
         webbrowser.open("https://stock.gapfocus.com/detail/" + row[0])
-
+        webbrowser.open("https://www.tradingview.com/chart/SiqZg1n6/?symbol=SET%3A" + row[0])
 
 
 except (Exception, psycopg2.Error) as error:
