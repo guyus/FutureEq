@@ -1,15 +1,12 @@
 from asyncio.windows_events import NULL
 import pandas as pd
-import config
-
 # import sqlite3
 # Create your connection.
 # cnx = sqlite3.connect('EquityTrend.db')
 df=pd.read_html('https://www.tfex.co.th/tfex/dailyMarketReport.html?periodView=A&selectedDate=P&marketListId=SF&instrumentId=&go=GO&locale=en_US')
 #df=pd.read_html('ss15.html');
 from sqlalchemy import create_engine
-#engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
-engine = create_engine('postgresql://'+config.db['user']+':'+config.db['password']+config.db['url'])
+engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
 df=df[0]
 
 tdate = df.iloc[:1,12].apply(lambda x: x.replace('Trading date: ',''))
@@ -35,6 +32,7 @@ df2.rename(columns={'Series': 'series', 'Last': 'last', 'chg': 'chg', 'Vol': 'vo
 #df2['PChg'] = df2['Chg(%Chg)'].apply(lambda x: x.replace('Chg(%Chg)','PChg').replace())
 keptDate = pd.to_datetime(tdate.values[0]).date()
 df2['trddate'] = pd.to_datetime(tdate.values[0]).date()
+
 df2= df2.fillna(0)
 print(df2)
 

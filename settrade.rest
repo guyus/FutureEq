@@ -1,0 +1,43 @@
+//GET https://wdn003.settrade.com/Derivatives/C13_FastQuoteMM.jsp?symbol=CPN 
+
+# GET https://wdn003.settrade.com/webrealtime/script/genKey.jsp?type=fastquote&1661378971747
+# Accept: */*
+# Accept-Encoding: gzip, deflate, br
+# Accept-Language: en-US,en;q=0.9,th;q=0.8
+# Connection: keep-alive
+# Cookie: visid_incap_2685215=KVUTmaLRTH2nYDV/uJWiaYL9YWIAAAAAQUIPAAAAAABeXADXT1G57GwL3burXGG5; _pubcid=0446fb39-2c6d-4b2f-8c84-fae4867c3398; __gads=ID=21a16b9a8ee7e923:T=1650596632:S=ALNI_Ma0HjxqzZ6dsOmBdrOOY7VoNdU86A; _fbp=fb.1.1651500652037.1666760633; _cc_id=f9b4cdc31b3709ef1a86afc01c159224; visid_incap_2797517=dVKZqg7lQAWF4WRuA2MoChmZu2IAAAAAQUIPAAAAAAAboktdpBi8hKuD0wHXUBWF; exp_history={"go_expid":"PK7lCwnwQ9aCptaRi7cQsw","msgt":"popup","count":1}|{"go_expid":"Ov_jwLyqSj2V5GhsYNlQ2A","msgt":"popup","count":1}|{"go_expid":"HDJQnaRtSumDrJngcy8PKA","msgt":"popup","count":1}|{"go_expid":"5AD93i4KR9-ZVNOhL9Vr2w","msgt":"popup","count":1}; _uid64035=2E930B69.212; __gpi=UID=000004f727d61ed5:T=1650596632:RT=1660352310:S=ALNI_MYnGFMNlHiyvGkZaZGHmfN2GE-jnA; cto_bundle=JSt0dF82dUl5V2xISE44ekp4RFRTUDJGcXJJSzd0QWV5U3p2Wkt3MnJBeVE2MHA0JTJGUmpSaCUyRnY0Wkt4OHRTSkdsUlVpVzAlMkJORVUlMkJmZW1KOUVEanc1M2VvYmxrRkRiUmFaZkl6JTJGTmw2V3BUbFJEbEw3dXZVU0Q1MkJMV3EwZ0hYclNpbkVIVHVIemhGVEphRlMxZEdsbWlHZjl5TlBHOG5VWmcySXMlMkJSOHZaczRRb2slM0Q; cto_bidid=Wb2Lbl9Wd1Q5JTJGQ0ZFUGRuRkU1Y1lla1N1WVdHcDhwSndpU0Z2JTJCVnRybjNLN0dzd3R0UFN3TURRbXNLRzlua1hqYVlZTXBBT21BYU5ZOEoxekJOTnZnSEg4RWxRNWY2WjRlbHR4NVh5RHhHcjdjSVR3QjFtZDliOEZlcVc0RUVLZ3RtJTJCaWVaT0JCQkozVjJ5ckt2R3J6UTE3ZUElM0QlM0Q; _ga_W11E901KXL=GS1.1.1660352311.26.1.1660352610.0; _ga=GA1.2.524342437.1650596628; rl="o+6xUN7evm5gK+zB3J9SGEQuo/nO5/+Rqao0Lu+fJP9Pcomf0RGyEZuxAA=="; __txtBrokerId=018; fav_MULTI=018%2C7055150; _gid=GA1.2.2026709427.1661346578; nlbi_2685215=dNt9GqiiEhQBU8IJPTOfMgAAAACHYlw6NThAqRwzuNww3yVk; incap_ses_8225_2685215=OnyJPUa+0yVD9p5ENBIlcuEkBmMAAAAA9dxr7B2ULfhXXsZkX4IpMw==; JSESSIONID=FC34763E334DA7D7E28E14081CA27560.ITDPN-TCD-A039; id=iSleBdG9Oa79uOaj4vPmQg0000000000; ls=MULTI; __txtUserRef=7055150; str_0=%3D018%2C7055150%3D1pPPWMKzr39nPffL2ZlrEFwqxv3Fn4j3y58MJvamHfJHarSTvweJJJO2Fg9uzdyDsrXLJiiUWy9OXu0zW%2B6UrSA9mRbD7v41rVTOwZcvSpjFMRiiVTVUcRTxDki8XxrelEskBnUOWQ0ecFCYoTZh25ChZFTnXCN08wLSVFVIaWIoUGRyVq4%3D; if="15rbZcXCxxAEXI7zrvsbZCFLv8zuxtavm95WZJP5X5M/afHmtGKddajTABVf0Q=="; st="DERIV|10.33.1.39|1661378720000|/Derivatives/C13_FastQuoteMM.jsp"; tm="rv+zNbiOs2VmJ+ijqP0YYCNJt4eygor10ZMtB+6eIYc3aPbgtGPZcubTRBYT+g=="
+# Host: wdn003.settrade.com
+# Referer: https://wdn003.settrade.com/Derivatives/C13_FastQuoteMM.jsp?symbol=BDMSU22
+# Sec-Fetch-Dest: script
+# Sec-Fetch-Mode: no-cors
+# Sec-Fetch-Site: same-origin
+# User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63
+# sec-ch-ua: "Chromium";v="104", " Not A;Brand";v="99", "Microsoft Edge";v="104"
+# sec-ch-ua-mobile: ?0
+# sec-ch-ua-platform: "Windows"
+
+
+POST https://wdn003.settrade.com/webrealtime/data/fastquote.jsp HTTP/1.1
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,th;q=0.8
+Connection: keep-alive
+Content-Length: 47
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Cookie: visid_incap_2685215=KVUTmaLRTH2nYDV/uJWiaYL9YWIAAAAAQUIPAAAAAABeXADXT1G57GwL3burXGG5; _pubcid=0446fb39-2c6d-4b2f-8c84-fae4867c3398; __gads=ID=21a16b9a8ee7e923:T=1650596632:S=ALNI_Ma0HjxqzZ6dsOmBdrOOY7VoNdU86A; _fbp=fb.1.1651500652037.1666760633; _cc_id=f9b4cdc31b3709ef1a86afc01c159224; visid_incap_2797517=dVKZqg7lQAWF4WRuA2MoChmZu2IAAAAAQUIPAAAAAAAboktdpBi8hKuD0wHXUBWF; exp_history={"go_expid":"PK7lCwnwQ9aCptaRi7cQsw","msgt":"popup","count":1}|{"go_expid":"Ov_jwLyqSj2V5GhsYNlQ2A","msgt":"popup","count":1}|{"go_expid":"HDJQnaRtSumDrJngcy8PKA","msgt":"popup","count":1}|{"go_expid":"5AD93i4KR9-ZVNOhL9Vr2w","msgt":"popup","count":1}; _uid64035=2E930B69.212; __gpi=UID=000004f727d61ed5:T=1650596632:RT=1660352310:S=ALNI_MYnGFMNlHiyvGkZaZGHmfN2GE-jnA; cto_bundle=JSt0dF82dUl5V2xISE44ekp4RFRTUDJGcXJJSzd0QWV5U3p2Wkt3MnJBeVE2MHA0JTJGUmpSaCUyRnY0Wkt4OHRTSkdsUlVpVzAlMkJORVUlMkJmZW1KOUVEanc1M2VvYmxrRkRiUmFaZkl6JTJGTmw2V3BUbFJEbEw3dXZVU0Q1MkJMV3EwZ0hYclNpbkVIVHVIemhGVEphRlMxZEdsbWlHZjl5TlBHOG5VWmcySXMlMkJSOHZaczRRb2slM0Q; cto_bidid=Wb2Lbl9Wd1Q5JTJGQ0ZFUGRuRkU1Y1lla1N1WVdHcDhwSndpU0Z2JTJCVnRybjNLN0dzd3R0UFN3TURRbXNLRzlua1hqYVlZTXBBT21BYU5ZOEoxekJOTnZnSEg4RWxRNWY2WjRlbHR4NVh5RHhHcjdjSVR3QjFtZDliOEZlcVc0RUVLZ3RtJTJCaWVaT0JCQkozVjJ5ckt2R3J6UTE3ZUElM0QlM0Q; _ga_W11E901KXL=GS1.1.1660352311.26.1.1660352610.0; _ga=GA1.2.524342437.1650596628; __txtBrokerId=018; fav_MULTI=018%2C7055150; _gid=GA1.2.2026709427.1661346578; nlbi_2685215=dNt9GqiiEhQBU8IJPTOfMgAAAACHYlw6NThAqRwzuNww3yVk; incap_ses_8225_2685215=OnyJPUa+0yVD9p5ENBIlcuEkBmMAAAAA9dxr7B2ULfhXXsZkX4IpMw==; JSESSIONID=BB381B8198F36036A225980ACF62B87D.ITDPN-TCD-A039; id=RVlcngt50rZPSdIKfSdPwA0000000000; rl="o+6xUN7evm5gK+zB3J9SGEQuo/nO5/+Rqao0Lu+fJP9Pcomf0RGyEZuxAA=="; ls=MULTI; __txtUserRef=7055150; tm="rv+zNbnEwREHVoa4qvkcZCACy/XS+uzv1tlWY5HzWJkwbvHjtCisEJi3NQkSsI2WpaHBJTXmJFsmfQ=="; if="15rbZcXCxxAEXI7zrvsbZCFLv8zuxtavm95WZJP5UZswa/Div2SddajTABVf0Q=="; st="DERIV|10.33.1.39|1661388713000|/webrealtime/script/genKey.jsp"; str_0=%3D018%2C7055150%3D1pPPWMKzr39nPffL2ZlrEFwqxv3Fn4j3y84xAZWYBe1rFbbw0WWoLbGsJhBsv9yDsrXLJiiUWy9OXu0zW%2B6UrSA9mRbD7v41rVTOwZcvSpjFJiKEUlBpajCRUkmVVG73pzEVFE8fWQ0ecFCYoTZh25ChZFTnXCN08wLSVFVIaWIoUGRyVq4%3D
+Host: wdn003.settrade.com
+Origin: https://wdn003.settrade.com
+Referer: https://wdn003.settrade.com/Derivatives/C13_FastQuoteMM.jsp?symbol=BDMSU22
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: "Chromium";v="104", " Not A;Brand";v="99", "Microsoft Edge";v="104"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+
+{
+    "symbol": "BDMSU22",
+    "key": "MmypaLaKsa8eaEZ*ARe*WQ$$""
+}

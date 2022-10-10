@@ -1,9 +1,11 @@
 import pandas as pd
+import config
 # import sqlite3
 # Create your connection.
 # cnx = sqlite3.connect('EquityTrend.db')
 from sqlalchemy import create_engine
-engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
+#engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
+engine = create_engine('postgresql://'+config.db['user']+':'+config.db['password']+config.db['url'])
 df=pd.read_html('https://classic.set.or.th/set/shortsales.do?language=en&country=US')
 
 df[0].rename(columns = {'Securities':'series','Volume (Shares)':'volume','Turnover (Baht)':'value',

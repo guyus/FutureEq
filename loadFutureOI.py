@@ -1,14 +1,18 @@
 import pandas as pd
 import http.client
+import config
+
 http.client.HTTPConnection._http_vsn = 10
 http.client.HTTPConnection._http_vsn_str = 'HTTP/1.0'
 # import sqlite3
 # Create your connection.
 # cnx = sqlite3.connect('EquityTrend.db')
+
 df=pd.read_html('http://www.tfex.co.th/tfex/dailyMarketReport.html?periodView=A&selectedDate=P&marketListId=SF&instrumentId=&go=GO&locale=en_US')
 #df=pd.read_html('ss15.html');
 from sqlalchemy import create_engine
-engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
+engine = create_engine('postgresql://'+config.db['user']+':'+config.db['password']+config.db['url'])
+#engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
 df=df[0]
 print(df)
 tdate = df.iloc[:1,12].apply(lambda x: x.replace('Trading date: ',''))

@@ -46,7 +46,8 @@ try:
         sql = "SELECT x.* FROM public.trendp_oi x WHERE pricer>0;"
     elif sType == "cb":
         sql = "SELECT series FROM public.\"TrendOI-Cont-Buy\";"
-
+    elif sType == "dd":
+        sql = "SELECT series FROM public.trendoi WHERE ft1>10 and fnet1 >0 and ((pval >0 and pricer  >0) or (pval  <0 and pricer <0)) and poi>=0;"
 
     if sType == "i":
         record = [['TCAP'],['SCGP'],['EA'],['TOA'],['CAPLL'],['RCL']]

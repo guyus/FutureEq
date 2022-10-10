@@ -1,9 +1,11 @@
 import pandas as pd
 import numpy as np
+import config
 
 df=pd.read_html('https://classic.set.or.th/mkt/commonstocklistresult.do?market=SET&language=en&country=US')
+#df=pd.read_html('sprice.htm')
 from sqlalchemy import create_engine
-engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
+engine = create_engine('postgresql://'+config.db['user']+':'+config.db['password']+config.db['url'])
 
 def GetDf(i):
     return df[i]
