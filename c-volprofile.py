@@ -11,38 +11,39 @@ engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
 
 sField = "net"
 sStartDate = "2021-08-01"
-multi = "PTT"
+sSymbol = "PTT"
 
-def setArg(para,multi,sField,sStartDate):
+def setArg(para,sSymbol,sField,sStartDate):
     sArg = para[para.find("-")+1:2]
     #print(sArg)
-    #print(sys.argv[2].find("-")+2)
+    ## --- GET PARAMETER -d xxx
     if sArg=="d":
         sStartDate = para[para.find("-")+3:]
     if sArg=="f":
         sField = para[para.find("-")+3:] 
     if sArg=="s":
-        multi = para[para.find("-")+3:] 
-    return multi,sField,sStartDate
+        sSymbol = para[para.find("-")+3:] 
+    return sSymbol,sField,sStartDate
 
 for x in sys.argv:
-    multi,sField,sStartDate = setArg(x,multi,sField,sStartDate)
+    sSymbol,sField,sStartDate = setArg(x,sSymbol,sField,sStartDate)
 
 #print(sStartDate)
 #print(sField)
 
 # Create your connection.
 # cnx = sqlite3.connect('EquityTrend.db')
-sSQL= "select sPrice.*,sNVDR.Net from sPrice INNER JOIN sNVDR ON Series = Symbol AND sPrice.TrdDate = sNVDR.TrdDate WHERE (Series = '"+multi.upper()+"') AND sPrice.TrdDate >='"+sStartDate+"'"
+sSQL= "select sPrice.*,sNVDR.Net from sPrice INNER JOIN sNVDR ON Series = Symbol AND sPrice.TrdDate = sNVDR.TrdDate WHERE (Series = '"+sSymbol.upper()+"') AND sPrice.TrdDate >='"+sStartDate+"'"
 print(sSQL)
 dt = pd.read_sql(sSQL, engine)
 #print(dt)
 fig = go.Figure()
 dfSum = dt['net'].cumsum()
+print(dfSum)
 fig.add_trace(go.Histogram(name='FNet Profile', x=dt[sField], y=dt['close'], nbinsy=70, histfunc='sum', marker_color='blue', orientation="h",visible=True,yaxis="y2", xaxis="x2"))
 fig.add_trace(go.Histogram(name='Vol Profile', x=[x*100 for x in dt.value.to_list()], y=dt['close'], nbinsy=70, marker_color='yellow', histfunc='sum',orientation="h",visible=True,yaxis="y2", xaxis="x2"))
 fig.add_trace(go.Bar(name='FNet Sum', x=dt['trddate'], y=dfSum, yaxis="y", xaxis="x", marker_color='black',visible=True))
-fig.add_trace(go.Bar(name='value', x=dt['trddate'], y=[x*1000 for x in dt.value.to_list()],marker_color='blue', yaxis="y", xaxis="x",visible=True))
+fig.add_trace(go.Bar(name='value', x=dt['trddate'], y=[x*1 for x in dt.value.to_list()],marker_color='blue', yaxis="y", xaxis="x",visible=True))
 #fig.add_trace(go.Bar(name='Net', x=dt['TrdDate'], y=['Net'],marker_color='#00ffff', yaxis="y", xaxis="x",visible=True))
 #fig.add_trace(go.Bar(name='Value', x=dt['TrdDate'], y=[x*100 for x in dt.Value.to_list()], yaxis="y", xaxis="x2",visible=True))
 fig.add_trace(go.Candlestick(
@@ -58,7 +59,7 @@ fig.add_trace(go.Candlestick(
         ))
 
 layout=go.Layout(
-        title=go.layout.Title(text="Candlestick With Volume Profile = "+multi.upper()),
+        title=go.layout.Title(text="Candlestick With Volume Profile = "+sSymbol.upper()),
         xaxis=go.layout.XAxis(
             side="top",title="Date",
             #range=[0, 90000000],

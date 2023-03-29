@@ -1,10 +1,10 @@
 --# Update SSFOI
 --update ssfoi n set vol=(select vol from ssfoi s where s.series = n.series and s.trddate='2022-07-15') where n.trddate ='2022-07-18';
---delete from ssfoi where trddate = '2022-10-07';
---update ssfoi set trddate = '2022-07-15' where trddate = '2022-07-18';
+--delete from ssfoi where trddate = '2022-11-02';
+--update ssfoi set trddate = '2023-02-01' where trddate = '2023-02-02';
 
 --# Update SPRICE
---update sprice set trddate = '2022-08-04'  where trddate = '2022-08-05'
+update sprice set trddate = '2023-03-27' where trddate = '2023-03-28';
 --update sprice set ppricer = case when sprice.pricer=0 or sprice.pricer is null then 0 else round(1 / sprice.pricer , 2) end
 --select series, pricer, round(pricer*10000000/(vol-lead(vol ,1) over (PARTITION BY series ORDER BY trddate desc)+1)::numeric ,1) as lagVal, trddate  
 --from sprice where series ='MBK'
@@ -16,7 +16,7 @@
 --select series, trddate, pricer , ratio_pv
 --, sum(round(ratio_pv  , 2)) OVER (PARTITION BY rm.series  ORDER BY rm.trddate) AS cum_net
 --from ratio_momentum rm where trddate >'2022-08-01' order by trddate desc 
---delete from sprice  where trddate = '2022-08-12';
+--delete from sprice  where trddate = '2023-01-06';
 
 --select symbol, sum(calvol) as tvol, sum(net) as tnet, round(sum(net)/sum(calvol),1) as tcost from snvdr s where  calvol <>0 and trddate >= '2021-01-01' group by symbol  --where symbol = 'AOT' symbol = 'BGRIM' and
 
@@ -32,11 +32,11 @@
 --UPDATE snvdr nv SET 
 --calvol = 0
 
---# Update sshortsell 
---UPDATE sshortsell SET trddate ='2022-07-27' where trddate = '2022-07-29';
+--# Update sshortsell --
+--UPDATE sshortsell SET trddate ='2023-01-13' where trddate = '2023-01-14';
 
---# Update SNVDR
---UPDATE snvdr nv SET trddate ='2022-07-27' where trddate = '2022-07-29';
+--# Update SNVDR--
+--UPDATE snvdr nv SET trddate ='2023-01-13' where trddate = '2023-01-14';
 --UPDATE snvdr nv SET 
 --calvol = round((nv.net) / ((s.open+s.close)/2::numeric), 1)
 --FROM sprice s where nv.symbol = s.series and nv.TrdDate=s.trddate 
@@ -50,13 +50,13 @@
 --join trendp_oi oi on oi.series  = ma.series 
 --where mc.cum_ratio > ma.avg_cum and pval>oi.volavg5 and v1>0.5 and oi.pricer >=0
 
---select ratio_pv ,ratio_pv1, toi.* from( 
---select *,
---	lead(ratio_pv) over (partition BY rm.series ORDER BY rm.trddate desc) as ratio_pv1  
---from ratio_momentum rm 
---where trddate > current_date -2 
---order by series) as tb join trendp_oi toi on toi.series = tb.series
---where tb.ratio_pv > tb.ratio_pv1  and toi.volavg5 >=0.5 and (((toi.pval>0 or toi.v1>toi.volavg5) and toi.pricer>=0))-- or ((toi.pval<0 or toi.v1<toi.volavg5) and toi.pricer<0))
-----and tb.ratio_pv>abs(ratio_pv1) --and tb.ratio_pv>=0 and ratio_pv1<=0
---order by ratio_pv1,toi.poi desc 
+select ratio_pv ,ratio_pv1, toi.* from( 
+select *,
+	lead(ratio_pv) over (partition BY rm.series ORDER BY rm.trddate desc) as ratio_pv1  
+from ratio_momentum rm 
+where trddate > current_date -5
+order by series) as tb join trendp_oi toi on toi.series = tb.series
+where tb.ratio_pv > tb.ratio_pv1  and toi.volavg5 >=0.5 and (((toi.pval>0 or toi.v1>toi.volavg5) and toi.pricer>=0))-- or ((toi.pval<0 or toi.v1<toi.volavg5) and toi.pricer<0))
+--and tb.ratio_pv>abs(ratio_pv1) --and tb.ratio_pv>=0 and ratio_pv1<=0
+order by ratio_pv1,toi.poi desc 
 
