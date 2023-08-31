@@ -7,3 +7,4 @@ pip install pandas
 pip install lxml
 pip install sqlalchemy
 pip install html5lib 
+pip install request 

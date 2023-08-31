@@ -1,10 +1,12 @@
 --# Update SSFOI
---update ssfoi n set vol=(select vol from ssfoi s where s.series = n.series and s.trddate='2022-07-15') where n.trddate ='2022-07-18';
---delete from ssfoi where trddate = '2022-11-02';
---update ssfoi set trddate = '2023-02-01' where trddate = '2023-02-02';
+--update ssfoi n set vol=(select vol from ssfoi s where s.series = n.series and s.trddate='2023-05-23') where n.trddate ='2023-05-25';
+--delete from ssfoi where trddate = '2023-04-04';
+--update ssfoi set trddate = '2023-05-25' where trddate = '2023-05-26';
 
 --# Update SPRICE
-update sprice set trddate = '2023-03-27' where trddate = '2023-03-28';
+--select l.series as sym ,(l.close - p.close) as close from sprice l, sprice p where l.trddate = '2023-05-24' and p.trddate = '2023-05-25' and l.series = p.series 
+--update sprice m set change = (select (l.close - p.close) as close from sprice l, sprice p where l.trddate = '2023-05-24' and p.trddate = '2023-05-25' and l.series = p.series and l.series = m.series)
+--where m.trddate = '2023-05-25' ;
 --update sprice set ppricer = case when sprice.pricer=0 or sprice.pricer is null then 0 else round(1 / sprice.pricer , 2) end
 --select series, pricer, round(pricer*10000000/(vol-lead(vol ,1) over (PARTITION BY series ORDER BY trddate desc)+1)::numeric ,1) as lagVal, trddate  
 --from sprice where series ='MBK'
@@ -16,8 +18,9 @@ update sprice set trddate = '2023-03-27' where trddate = '2023-03-28';
 --select series, trddate, pricer , ratio_pv
 --, sum(round(ratio_pv  , 2)) OVER (PARTITION BY rm.series  ORDER BY rm.trddate) AS cum_net
 --from ratio_momentum rm where trddate >'2022-08-01' order by trddate desc 
---delete from sprice  where trddate = '2023-01-06';
-
+delete from sprice  where trddate = '2023-08-24
+';
+--update sprice set trddate = '2023-06-16' where trddate = '2023-06-17'
 --select symbol, sum(calvol) as tvol, sum(net) as tnet, round(sum(net)/sum(calvol),1) as tcost from snvdr s where  calvol <>0 and trddate >= '2021-01-01' group by symbol  --where symbol = 'AOT' symbol = 'BGRIM' and
 
 --select symbol,net,calvol,round(net/(calvol+1)), round((s."open"+s."close")/2),nv.trddate  from snvdr nv left join sprice s on nv.symbol = s.series and nv.TrdDate=s.trddate where symbol = 'BGRIM' and calvol <>0
@@ -33,10 +36,10 @@ update sprice set trddate = '2023-03-27' where trddate = '2023-03-28';
 --calvol = 0
 
 --# Update sshortsell --
---UPDATE sshortsell SET trddate ='2023-01-13' where trddate = '2023-01-14';
+--UPDATE sshortsell SET trddate ='2023-08-02' where trddate = '2023-08-02';
 
 --# Update SNVDR--
---UPDATE snvdr nv SET trddate ='2023-01-13' where trddate = '2023-01-14';
+--UPDATE snvdr nv SET trddate ='2023-08-02' where trddate = '2023-08-02';
 --UPDATE snvdr nv SET 
 --calvol = round((nv.net) / ((s.open+s.close)/2::numeric), 1)
 --FROM sprice s where nv.symbol = s.series and nv.TrdDate=s.trddate 

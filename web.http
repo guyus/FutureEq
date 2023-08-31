@@ -1,0 +1,6 @@
+GET https://www.set.or.th/api/set/shortsales HTTP/1.1
+Accept: application/json
+Host: www.set.or.th
+Origin: https://www.set.or.th
+Referer: https://www.set.or.th/th/market/statistics/nvdr/trading-by-stock
+Cookie: id=KqKgOXZeJxapT8k8AL1rOg%3D%3D00000000;

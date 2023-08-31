@@ -13,7 +13,7 @@ df=pd.read_html('http://www.tfex.co.th/tfex/dailyMarketReport.html?periodView=A&
 from sqlalchemy import create_engine
 engine = create_engine('postgresql://'+config.db['user']+':'+config.db['password']+config.db['url'])
 #engine = create_engine('postgresql://postgres:123@localhost:5432/EquityTrend')
-df=df[0]
+df=df[1]
 print(df)
 tdate = df.iloc[:1,12].apply(lambda x: x.replace('Trading date: ',''))
 tdate.values[0]
