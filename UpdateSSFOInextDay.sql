@@ -18,9 +18,8 @@
 --select series, trddate, pricer , ratio_pv
 --, sum(round(ratio_pv  , 2)) OVER (PARTITION BY rm.series  ORDER BY rm.trddate) AS cum_net
 --from ratio_momentum rm where trddate >'2022-08-01' order by trddate desc 
-delete from sprice  where trddate = '2023-08-24
-';
---update sprice set trddate = '2023-06-16' where trddate = '2023-06-17'
+--delete from sprice  where trddate = '2023-12-05';
+update sprice set trddate = '2023-12-15' where trddate = '2023-12-16'
 --select symbol, sum(calvol) as tvol, sum(net) as tnet, round(sum(net)/sum(calvol),1) as tcost from snvdr s where  calvol <>0 and trddate >= '2021-01-01' group by symbol  --where symbol = 'AOT' symbol = 'BGRIM' and
 
 --select symbol,net,calvol,round(net/(calvol+1)), round((s."open"+s."close")/2),nv.trddate  from snvdr nv left join sprice s on nv.symbol = s.series and nv.TrdDate=s.trddate where symbol = 'BGRIM' and calvol <>0

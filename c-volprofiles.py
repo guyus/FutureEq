@@ -50,7 +50,7 @@ try:
         sql = "SELECT series FROM public.trendoi WHERE ft1>10 and fnet1 >0 and ((pval >0 and pricer  >0) or (pval  <0 and pricer <0)) and poi>=0;"
 
     if sType == "i":
-        record = [['TCAP'],['SCGP'],['EA'],['TOA'],['CAPLL'],['RCL']]
+        record = [['PTT'],['CPN'],['OR'],['TOA'],['CAPLL'],['RCL']]
     else:
         print(sql)
         cursor.execute(sql)
@@ -59,7 +59,7 @@ try:
 
     for row in record:
         #print("c-volprofile.py -d:2021-08-02 -s:" + row[0])
-        os.system("c-volprofile.py -d:2021-08-02 -s:" + row[0])
+        os.system("c-volprofile.py -d:2023-01-01 -s:" + row[0])
         webbrowser.open("https://stock.gapfocus.com/detail/" + row[0])
         webbrowser.open("https://www.tradingview.com/chart/SiqZg1n6/?symbol=SET%3A" + row[0])
 
