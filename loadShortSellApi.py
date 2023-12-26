@@ -13,7 +13,8 @@ if sSource=="file":
     with open('./data/shortsales01-02-23.json','r') as f:
         data = json.loads(f.read())
 elif sSource=="api":
-    url = 'https://www.set.or.th/api/set/shortsales'
+    sdate = '' #'?fromDate=22%2F12%2F2023&toDate=22%2F12%2F2023'
+    url = 'https://www.set.or.th/api/set/shortsales'+''
     headers = {
         'Content-Type': 'application/json',
         'Host': 'www.set.or.th',

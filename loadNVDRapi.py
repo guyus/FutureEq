@@ -14,7 +14,8 @@ if sSource=="file":
     with open('./data/NVDRstock-trading31-01-23.json','r') as f:
         data = json.loads(f.read())
 elif sSource=="api":
-    url = 'https://www.set.or.th/api/set/nvdr-trade/stock-trading?sortBy=symbol'
+    sdate = '' #'&date=22%2F12%2F2023'
+    url = 'https://www.set.or.th/api/set/nvdr-trade/stock-trading?sortBy=symbol'+sdate
     #r = requests.get('https://www.set.or.th/api/set/nvdr-trade/stock-trading?sortBy=symbol')
     #url = 'https://www.set.or.th/api/set/nvdr-trade/stock-trading?sortBy=symbol&date=09/03/2023'
     headers = {
