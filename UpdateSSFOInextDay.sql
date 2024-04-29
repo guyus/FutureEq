@@ -1,9 +1,10 @@
 --# Update SSFOI
 --update ssfoi n set vol=(select vol from ssfoi s where s.series = n.series and s.trddate='2023-05-23') where n.trddate ='2023-05-25';
 --delete from ssfoi where trddate = '2023-04-04';
---update ssfoi set trddate = '2023-05-25' where trddate = '2023-05-26';
+update ssfoi set trddate = '2024-03-21' where trddate = '2024-03-22'
 
 --# Update SPRICE
+update sprice  set trddate = '2024-04-19' where trddate = '2024-04-20'
 --select l.series as sym ,(l.close - p.close) as close from sprice l, sprice p where l.trddate = '2023-05-24' and p.trddate = '2023-05-25' and l.series = p.series 
 --update sprice m set change = (select (l.close - p.close) as close from sprice l, sprice p where l.trddate = '2023-05-24' and p.trddate = '2023-05-25' and l.series = p.series and l.series = m.series)
 --where m.trddate = '2023-05-25' ;
@@ -18,8 +19,21 @@
 --select series, trddate, pricer , ratio_pv
 --, sum(round(ratio_pv  , 2)) OVER (PARTITION BY rm.series  ORDER BY rm.trddate) AS cum_net
 --from ratio_momentum rm where trddate >'2022-08-01' order by trddate desc 
---delete from sprice  where trddate = '2023-12-05';
-update sprice set trddate = '2023-12-15' where trddate = '2023-12-16'
+--delete from sprice  where trddate = '2024-04-05';
+--update tempprice  set trddate = '2024-03-21' where trddate is null
+
+
+update sprice set trddate = '2024-04-05' where trddate = '2024-04-06'
+--update sprice s set close=prior where s.trddate = '2024-02-08'
+
+update sprice s set 
+value = (select value  from tempprice  p where s.series=p.series and p.trddate = '2024-03-21'),
+vol = (select vol  from tempprice  p where s.series=p.series and p.trddate = '2024-03-21')
+--"prior"=(select "close" from sprice p where s.series=p.series and p.trddate = '2024-02-06'),
+--"change"=(select s."close"-p.close from sprice p where s.series=p.series and p.trddate = '2024-02-06'),
+--"pchange"=(select ROUND((s."close"-p.close)/p.close*100,3) from sprice p where s.series=p.series and p.trddate = '2024-02-06')
+where s.trddate = '2024-03-21'
+
 --select symbol, sum(calvol) as tvol, sum(net) as tnet, round(sum(net)/sum(calvol),1) as tcost from snvdr s where  calvol <>0 and trddate >= '2021-01-01' group by symbol  --where symbol = 'AOT' symbol = 'BGRIM' and
 
 --select symbol,net,calvol,round(net/(calvol+1)), round((s."open"+s."close")/2),nv.trddate  from snvdr nv left join sprice s on nv.symbol = s.series and nv.TrdDate=s.trddate where symbol = 'BGRIM' and calvol <>0
